@@ -1,4 +1,4 @@
-righ
+
   @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200&family=Protest+Strike&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 *{
@@ -7,14 +7,16 @@ righ
 }
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
 }
 
 .homepage{
-    background-image: linear-gradient(to bottom, rgba(31, 54, 86, 0.5), rgba(10, 17, 39, 0.786)), url('pexels-felix-mittermeier-957061.jpg');
+    background-image: linear-gradient(to bottom, rgba(11, 18, 27, 0.5), rgb(0, 2, 7)), url('ribbon-light-space.jpg');
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat; 
@@ -58,6 +60,7 @@ header{
     text-decoration: none;
     color: white;
     font-size: 20px;
+    font-weight: 250;
 }
 
 .right > a {
@@ -71,7 +74,7 @@ header{
 
 .head-1{
    font-size: 1.2rem;
-   color: rgb(210, 0, 238);
+   color: #CC005F;
       
 }
 .head-2{
@@ -81,7 +84,7 @@ header{
 .head-3{
     font-size: 1rem;
     color: rgb(210, 203, 203);
-    font-weight:30;
+    font-weight:300;
 }
 
 .home{
@@ -109,6 +112,14 @@ header{
     padding: 10px 15px;
     font-family: sans-serif;
     font-size: 15px;
+    cursor: pointer;
+}
+
+.contactme:hover{
+    border-style: solid; /* Example: solid */
+    border-color: #CC005F; /* Example: black */
+    border-width: 2px;
+    transition: border-color 0.3s, color 0.3s;
 }
 
 .about{
@@ -118,8 +129,8 @@ header{
     gap: 10px;
     align-items: center;
     height: 80vh;
-    background-color: bisque;
-    padding: 20px 40px;
+    background-color: rgb(255, 255, 255);
+    padding:60px;
 }
 .about_2{
     display: flex;
@@ -136,7 +147,12 @@ header{
 }
 
 .about_right{
-padding: 50px;
+padding: 30px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-weight: 300;
 }
 
 
@@ -154,23 +170,33 @@ padding: 50px;
 
 .skills{
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    gap: 30px;
     align-items: center;
-    height: 60vh;
-    background-color: #726666;
-    padding: 0px 40px;
+    height: 40vh;
+    background-color: #faf8f8;
 }
 
-.skill_cont{
+
+
+.skill-head{
+    font-size: 40px;
+    font-weight: 300;
+    transform: rotate(270deg);
+}
+
+.skill_label{
+    font-weight: 350;
+}
+
+/* .skill_cont{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    /* background-color: #d8c0c0; */
     height: 65%;
     width: 90%;
 
-}
+} */
 
 .one_bar{
     margin: 40px 10px;
@@ -184,79 +210,261 @@ padding: 50px;
 
 .percent{
     font-size: 12px;
+    font-weight: 300;
 }
 
-.skill_bar{
-    width: 200px; /* Adjust width as needed */
-    height: 10px; /* Adjust height as needed */
-    border-left: 100px solid #ff0000; /* Width of border determines the split */
-    background-color: #0000ff;
-    margin: 5px 0px;
+.skill_bar {
+    width: 300px; /* Width of the skill bar */
+    height: 10px; /* Height of the skill bar */
+    background-color: #adabab; /* Background color of the skill bar */
+    margin-bottom: 10px; /* Spacing between skill bars */
+}
+
+/* Styling for the colored portion of the skill bar */
+.skill-level {
+    height: 100%; /* Height of the colored portion matches the skill bar height */
+    background-color: #000000; /* Default color of the colored portion */
+}
+
+/* Styling for different completion percentages */
+.skill-bar-90 .skill-level {
+    width: 90%; /* Width of the colored portion for 90% completion */
+}
+
+.skill-bar-80 .skill-level {
+    width: 80%; /* Width of the colored portion for 90% completion */
+}
+
+.skill-bar-70 .skill-level {
+    width: 70%; /* Width of the colored portion for 70% completion */
+}
+
+.skill-bar-60 .skill-level {
+    width: 60%; /* Width of the colored portion for 70% completion */
+}
+
+.skill-bar-50 .skill-level {
+    width: 50%; /* Width of the colored portion for 50% completion */
+}
+
+
+.resume{
+    background-color: #faf8f8;
+    display: flex;
+    justify-content:center;
+    gap: 50px;
+    align-items: center;
+    padding-left: 140px;
+    padding-bottom: 50px;
+}
+
+.hire-btn{
+    padding: 12px 50px;
+    font-size: 20px;
+    background-color:#00000000;
+    border: solid #000000;
+    cursor: pointer;
+}
+
+.hire-btn:hover{
+    padding: 12px 50px;
+    font-size: 20px;
+    background-color:#00000000;
+    border: solid #CC005F;
+    color: #CC005F;
+}
+
+.resume-btn{
+    padding: 12px 10px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #000000;
+    cursor: pointer;
+    border: solid #000000;
+}
+.resume-btn:hover{
+    background-color: #575353;
 }
 
 .portfolio{
-    height: 70vh;
-    padding: 50px;
+    height: 50vh;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: #d8c0c0;
+    background-color: #ffffff;
 }
 .projects-1{
     margin: 30px 0px;
     width: 80%;
     display: flex;
     justify-content: space-evenly;
-    gap: 100px;
-    align-items: center;
+    gap: 50px;
+    align-items:center;
 }
 
-.projects-2{
-    margin: 30px 0px;
-    width: 80%;
+.card-1{
+    height: 14rem;
+    width: 13rem;
+    background-color: rgb(0, 0, 0);
+    border: solid #CC005F;
+    border-radius: 5%;
+    padding: 5px;
+    background-image: url('urbanwheels.png') ;
+    background-size: cover; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+    background-repeat: no-repeat; /* Adjust as needed */
     display: flex;
     justify-content: center;
-    gap:140px ;
     align-items: center;
+    cursor: pointer;
 }
 
-.card{
-    background-color: aquamarine;
-    border: solid #726666;
+.card-2{
+    height: 14rem;
+    width: 13rem;
+    background-color: rgb(0, 0, 0);
+    border: solid #CC005F;
+    border-radius: 5%;
     padding: 5px;
+    background-image: url('educlub.png') ;
+    background-size: cover; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+    background-repeat: no-repeat; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
-.port_img1{
-    height: 11rem;
-  
+.card-3{
+    height: 14rem;
+    width: 13rem;
+    background-color: rgb(0, 0, 0);
+    border: solid #CC005F;
+    border-radius: 5%;
+    padding: 5px;
+    background-image: url('music_player.png') ;
+    background-size: cover; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+    background-repeat: no-repeat; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
+
+.card-4{
+    height: 14rem;
+    width: 13rem;
+    background-color: rgb(0, 0, 0);
+    border: solid #CC005F;
+    border-radius: 5%;
+    padding: 5px;
+    background-image: url('quickcart.png') ;
+    background-size: cover; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+    background-repeat: no-repeat; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* .port_img1{
+    height: 11rem;  
+    border-radius: 5%;
+} */
 
 .card_head{
     padding: 2px 2px;
     text-align: center;
+    color: #ffffff;
 }
 
-.card_desc{
-    padding: 2px 2px;
-    font-size: 14px;
-    text-align: center;
+/* contact form style goes here */
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ece6e6;
 }
 
-.resume{
-    background-color: #726666;
-    height: 13vh;
+.contact{
+    /* background-color: antiquewhite; */
+    height: 60vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    padding: 40px 40px;
+    height: 80%;
+    background-color: rgb(92, 157, 213);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: first baseline;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.right-contact{
+    color: #ffffff;
+    padding: 40px 40px;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: first baseline;
+    background-color: #000000;
+}
+
+.left > div > input {
+    margin: 5px 0px;
+    padding: 7px 5px;
+    border: solid #0000001f;
+    border-width: 1px;
+}
+
+.left > h1{
+    font-size: 30px;
+}
+
+.left > button {
+    padding: 5px 5px;
+    background-color: #CC005F;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+}
+
+.left > div {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 70px;
 }
 
-.resume > button {
-    padding: 10px 8px;
+.cont > p > span {
+    font-weight: bolder;
 }
 
+textarea{
+    padding: 5px;
+    border: solid #0000001f;
+    border-width: 1px;
+}
+
+
+
+/* footer style starts here */
 
 .footer{
     display: flex;
@@ -265,6 +473,7 @@ padding: 50px;
     align-items: center;
     padding: 20px 0px;
     background-color:#000000;
+    font-size: large;
 }
 
 .footer > p{
@@ -278,6 +487,11 @@ padding: 50px;
 
 .foot-2 > p > a{
     text-decoration: none;
+    color: #43c3df;
+}
+
+.footer > .right {
+    padding: 10px 0px;
 }
 
 
