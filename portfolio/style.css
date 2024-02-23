@@ -34,12 +34,7 @@ body{
     align-items: center;
 }
 
-/* .logo{
-    background-color: rgb(200, 102, 37);
-} */
-
 header{
-    /* background-color: #312D4F; */
     display: flex;
     justify-content: space-between;
     padding: 18px 25px;
@@ -108,8 +103,8 @@ header{
 
 .contactme{
     margin-top: 25px;
-    border-style: solid; /* Example: solid */
-    border-color: #ffffff; /* Example: black */
+    border-style: solid; 
+    border-color: #ffffff; 
 
 
     border-width: 2px;
@@ -122,8 +117,8 @@ header{
 }
 
 .contactme:hover{
-    border-style: solid; /* Example: solid */
-    border-color: #CC005F; /* Example: black */
+    border-style: solid;
+    border-color: #CC005F;
     border-width: 2px;
     transition: border-color 0.3s, color 0.3s;
 }
@@ -142,7 +137,6 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* background-color: rgb(128, 116, 103); */
 }
 
 .about_left{
@@ -195,15 +189,6 @@ font-weight: 300;
     font-weight: 350;
 }
 
-/* .skill_cont{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 65%;
-    width: 90%;
-
-} */
-
 .one_bar{
     margin: 40px 10px;
 }
@@ -220,37 +205,36 @@ font-weight: 300;
 }
 
 .skill_bar {
-    width: 300px; /* Width of the skill bar */
-    height: 10px; /* Height of the skill bar */
-    background-color: #adabab; /* Background color of the skill bar */
-    margin-bottom: 10px; /* Spacing between skill bars */
+    width: 300px; 
+    height: 10px; 
+    background-color: #adabab; 
+    margin-bottom: 10px; 
 }
 
 /* Styling for the colored portion of the skill bar */
 .skill-level {
-    height: 100%; /* Height of the colored portion matches the skill bar height */
-    background-color: #000000; /* Default color of the colored portion */
+    height: 100%; 
+    background-color: #000000; 
 }
 
-/* Styling for different completion percentages */
 .skill-bar-90 .skill-level {
-    width: 90%; /* Width of the colored portion for 90% completion */
+    width: 90%; 
 }
 
 .skill-bar-80 .skill-level {
-    width: 80%; /* Width of the colored portion for 90% completion */
+    width: 80%; 
 }
 
 .skill-bar-70 .skill-level {
-    width: 70%; /* Width of the colored portion for 70% completion */
+    width: 70%; 
 }
 
 .skill-bar-60 .skill-level {
-    width: 60%; /* Width of the colored portion for 70% completion */
+    width: 60%; 
 }
 
 .skill-bar-50 .skill-level {
-    width: 50%; /* Width of the colored portion for 50% completion */
+    width: 50%; 
 }
 
 
@@ -320,9 +304,9 @@ font-weight: 300;
     border-radius: 5%;
     padding: 5px;
     background-image: url('images/urbanwheels.png') ;
-    background-size: cover; /* Adjust as needed */
-    background-position: center; /* Adjust as needed */
-    background-repeat: no-repeat; /* Adjust as needed */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -337,9 +321,9 @@ font-weight: 300;
     border-radius: 5%;
     padding: 5px;
     background-image: url('images/educlub.png') ;
-    background-size: cover; /* Adjust as needed */
-    background-position: center; /* Adjust as needed */
-    background-repeat: no-repeat; /* Adjust as needed */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -354,9 +338,9 @@ font-weight: 300;
     border-radius: 5%;
     padding: 5px;
     background-image: url('images/music_player.png') ;
-    background-size: cover; /* Adjust as needed */
-    background-position: center; /* Adjust as needed */
-    background-repeat: no-repeat; /* Adjust as needed */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -371,27 +355,20 @@ font-weight: 300;
     border-radius: 5%;
     padding: 5px;
     background-image: url('images/quickcart.png') ;
-    background-size: cover; /* Adjust as needed */
-    background-position: center; /* Adjust as needed */
-    background-repeat: no-repeat; /* Adjust as needed */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
 }
 
-/* .port_img1{
-    height: 11rem;  
-    border-radius: 5%;
-} */
-
 .card_head{
     padding: 2px 2px;
     text-align: center;
     color: #ffffff;
 }
-
-/* contact form style goes here */
 
 
 .container{
@@ -403,7 +380,6 @@ font-weight: 300;
 }
 
 .contact{
-    /* background-color: antiquewhite; */
     height: 60vh;
     width: 50%;
     display: flex;

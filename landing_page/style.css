@@ -102,7 +102,6 @@
 }
 
 .right{
-    /* background-color: rgb(115, 200, 11); */
     display: flex;
     justify-content: center;
     align-items: center;
