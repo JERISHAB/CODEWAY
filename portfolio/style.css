@@ -16,7 +16,7 @@ body{
 }
 
 .homepage{
-    background-image: linear-gradient(to bottom, rgba(11, 18, 27, 0.5), rgb(0, 2, 7)), url('ribbon-light-space.jpg');
+    background-image: linear-gradient(to bottom, rgba(11, 18, 27, 0.5), rgb(0, 2, 7)), url('images/ribbon-light-space.jpg');
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat; 
@@ -61,6 +61,12 @@ header{
     color: white;
     font-size: 20px;
     font-weight: 250;
+}
+
+.mid > ul > li > a:hover{
+    color: #CC005F;
+    transition: border-color 0.3s, color 0.3s;
+    
 }
 
 .right > a {
@@ -272,6 +278,7 @@ font-weight: 300;
     background-color:#00000000;
     border: solid #CC005F;
     color: #CC005F;
+    transition: border-color 0.3s, color 0.3s;
 }
 
 .resume-btn{
@@ -284,6 +291,7 @@ font-weight: 300;
 }
 .resume-btn:hover{
     background-color: #575353;
+    transition: border-color 0.3s, color 0.3s;
 }
 
 .portfolio{
@@ -311,7 +319,7 @@ font-weight: 300;
     border: solid #CC005F;
     border-radius: 5%;
     padding: 5px;
-    background-image: url('urbanwheels.png') ;
+    background-image: url('images/urbanwheels.png') ;
     background-size: cover; /* Adjust as needed */
     background-position: center; /* Adjust as needed */
     background-repeat: no-repeat; /* Adjust as needed */
@@ -328,7 +336,7 @@ font-weight: 300;
     border: solid #CC005F;
     border-radius: 5%;
     padding: 5px;
-    background-image: url('educlub.png') ;
+    background-image: url('images/educlub.png') ;
     background-size: cover; /* Adjust as needed */
     background-position: center; /* Adjust as needed */
     background-repeat: no-repeat; /* Adjust as needed */
@@ -345,7 +353,7 @@ font-weight: 300;
     border: solid #CC005F;
     border-radius: 5%;
     padding: 5px;
-    background-image: url('music_player.png') ;
+    background-image: url('images/music_player.png') ;
     background-size: cover; /* Adjust as needed */
     background-position: center; /* Adjust as needed */
     background-repeat: no-repeat; /* Adjust as needed */
@@ -362,7 +370,7 @@ font-weight: 300;
     border: solid #CC005F;
     border-radius: 5%;
     padding: 5px;
-    background-image: url('quickcart.png') ;
+    background-image: url('images/quickcart.png') ;
     background-size: cover; /* Adjust as needed */
     background-position: center; /* Adjust as needed */
     background-repeat: no-repeat; /* Adjust as needed */
@@ -439,11 +447,16 @@ font-weight: 300;
 }
 
 .left > button {
-    padding: 5px 5px;
+    padding: 8px 8px;
     background-color: #CC005F;
     color: #ffffff;
     border-radius: 5px;
     border: none;
+    cursor: pointer;
+}
+
+.left > button:hover {
+    background-color: #bc2a6e;
 }
 
 .left > div {
